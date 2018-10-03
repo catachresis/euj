@@ -7,11 +7,17 @@
 
 # Site settings
 title: "Eastlake United for Justice"
-email: catachresis@protonmail.com
+email: hello@eastlakeunited.org
+location: "Oakland, CA"
 description: > # this means to ignore newlines until "baseurl:"
   Eastlake United for Justice
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://eastlakeunited.org"
+
+posts_btn: "About"
+projects_btn: "Platform"
+close_btn: "Close"
+home_btn: "Home"
 
 # Build settings
 markdown: kramdown

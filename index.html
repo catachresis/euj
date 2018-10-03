@@ -1,99 +1,118 @@
 ---
-title: "Eastlake United for Justice"
-layout: landing
+layout: default
 ---
-  
-	<body class="homepage">
-	{% include header_landing.html %}
+<script src="{{ "/styles/index.js" | prepend: site.baseurl }}"></script>
+<div class="my-menu">
+  <a id="posts-btn" class="waves-effect waves-teal btn-flat btn-large" onclick="show_posts();">{{ site.posts_btn }}</a>
+  <a id="projects-btn" class="waves-effect waves-teal btn-flat btn-large" onclick="show_projects();">{{ site.projects_btn }}</a>
+</div>
+<div id="posts">
 
-		<!-- Main -->
-			<div id="main-wrapper">
-				<div class="container">
-					<div class="row">
-						<div class="12u">
+  <h2 class="my-mini-heading">{{ site.posts_btn }}</h2>
+	<p>
+		Our Neighborhood group initially came together with the intention of building neighborhood relationships, creating neighborhood security and alternatives to policing and surveillance, supporting individual families/households in preparing for emergencies and creating a network of mutual support with immediate neighbors in case of any emergency (fire, earthquake, storm, street violence, etc.) and prevent gentrification and displacement. We also have the intention of forming sub-working groups for neighborhood scale projects such as guerrilla gardening, advocating for affordable housing restoration, organizing cultural events, etc.
+	</p>
+	<p>
+		We believe that all ecological and social problems stem from our profit-based economic system as well as the forms of discrimination that support it, and that organizing people into collective action to meet their needs and improve the conditions of their lives is one of the most critical and inspiring ways to build a just, safe and beautiful life for everyone.
+	</p>
+	<p>
+		<strong>Who should participate in the EUJ neighbor group?</strong>
+	</p>
+	<p>
+		Our neighborhood group seeks to cultivate neighborhood-level relationships between people who share our intention and believe left politics and political change is needed and important in our communities. Our group is for people who live in the East Lake Neighborhood, broadly defined as the area on the East Side of Lake Merritt.
+	</p>
+	<p>
+		Examples of issues our group has discussed and/or worked on in the past include: emergency preparedness, guerrilla gardening, gentrification, and policing. We encourage people to bring new ideas to the group and hope to discuss a range of issues impacting the East Lake area through a shared, left perspective and intention.
+	</p>
+	<p>
+		<a href="mailto:hello@eastlakeunited.org">Contact us.</a>
+	</p>
+  <div>
+    <a onclick="hide_lists();" class="waves-effect waves-teal btn-flat btn-large">{{ site.close_btn }}</a>
+  </div>
+</div>
 
-							<!-- Portfolio 
-								<section>
-									<header class="major">
-										<h2>My Portfolio</h2>
-									</header>
-									<div class="row">
-										<div class="4u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="{{ site.baseurl }}/assets/images/pic02.jpg" alt="" /></a>
-												<header>
-													<h3>Ipsum feugiat et dolor</h3>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
-										</div>
-										<div class="4u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="{{ site.baseurl }}/assets/images/pic03.jpg" alt="" /></a>
-												<header>
-													<h3>Sed etiam lorem nulla</h3>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
-										</div>
-										<div class="4u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="{{ site.baseurl }}/assets/images/pic04.jpg" alt="" /></a>
-												<header>
-													<h3>Consequat et tempus</h3>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
-										</div>
-									</div>
-									<div class="row">
-										<div class="4u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="{{ site.baseurl }}/assets/images/pic05.jpg" alt="" /></a>
-												<header>
-													<h3>Blandit sed adipiscing</h3>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
-										</div>
-										<div class="4u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="{{ site.baseurl }}/assets/images/pic06.jpg" alt="" /></a>
-												<header>
-													<h3>Etiam nisl consequat</h3>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
-										</div>
-										<div class="4u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="{{ site.baseurl }}/assets/images/pic07.jpg" alt="" /></a>
-												<header>
-													<h3>Dolore nisl feugiat</h3>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
-										</div>
-									</div>
-								</section> -->
 
-						</div>
-					</div>
+<div id="projects">
+  <h2 class="my-mini-heading">{{ site.projects_btn }}</h2>
+	<h3 class="my-mini-heading-sub">Vision</h3>
+	<p>
+		We are parents, teachers, artists, nonprofit workers, professionals, people of color, immigrant, long-time and newcomer residents of the Eastlake in Oakland. We care about our diverse neighborhood and support the well-being of neighbors, whether they’ve been here a long time or are new. We are invested in a town where generations of families can call Oakland home without being driven out by gentrification.
+	</p>
+	<h3 class="my-mini-heading-sub">Principles</h3>
+	<p>
+		<ul>
+			<li>To build communities we want to live in</li>
+			<li>To develop trust and relationship between neighbors</li>
+			<li>To share information and resources especially with those most in need</li>
+		</ul>
+	</p>
+	<h3 class="my-mini-heading-sub">Platform</h3>
+	<p class="bold">Budget</p>
+	<p>
+		We believe in an Oakland where public resources are maximized for public good and prioritized for those who need it the most. People need to be able to look at the City budget, understand it and see how money is being spent. Community engagement in the budget process yields funding for community priorities. We call on the City to
+		<ul>
+			<li>Produce public annual reports about how the budget is being spent by the departments or programs that were funded, and what goals they achieved.</li>
+			<li>Promote transparency about how large unbudgeted expenditures, like police overtime, are funded and what reallocation decisions were made.</li>
+			<li>Significantly increase funding for low income housing and public services for unhoused neighbors.</li>
+		</ul>
+	</p>
+	<p class="bold">Housing</p>
+	<p>
+		We envision a City where government prioritizes affordable housing and development funds to ensure the broadest public good. We support public land for public good. We must grow the housing stock for low income folks and protect renters and tenants from being squeezed out of their homes. Meaningful resources must be dedicated to serving the unhoused community. We call on the City/our elected officials to
+		<ul>
+			<li>Support and implement the people’s public lands proposal that includes following the Surplus Lands Act and establishing a community advisory committee.</li>
+			<li>Grow the low income housing budget with creative ways to generate, find and leverage funds.</li>
+			<li>Strengthen renter protection laws and programs, including a moratorium on SRO and condo conversions.</li>
+		</ul>
+	</p>
+	<p class="bold">Community Safety</p>
+	<p>
+		Community safety means safety for all of us -- whether we rent, own homes, sleep in tents, are Black, Brown, White, immigrant, or undocumented. Real safety means being in relationship with community. We call on the City/our elected officials to
+		<ul>
+			<li>Address police overtime in the budget so that more funds are directed toward addressing the housing and homelessness crisis.</li>
+			<li>Stop forced evictions of homeless encampments, and instead be proactive about supporting public land and services where they can live safely.</li>
+			<li>Promote a culture of racial and social justice so that neighbors do not call the police for everything that appears "suspicious."</li>
+		</ul>
+	</p>
+  <div>
+    <a onclick="hide_lists();" class="waves-effect waves-teal btn-flat btn-large">{{ site.close_btn }}</a>
+  </div>
+</div>
+
+<noscript>
+  <div id="posts-noscript">
+
+    <h2 class="my-mini-heading">{{ site.posts_btn }}</h2>
+
+    <ul>
+      {% for post in site.posts %}
+      <li>
+        <p class="my-item">
+          <a href="{{ post.url | prepend: site.baseurl }}" class="my-link">{{ post.title }}</a><br>
+          <span class="my-item-sub">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </p>
+      </li>
+      {% endfor %}
+      <li>
+        <p class="my-item">
+          <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="my-link">RSS</a> / <a href="{{ "/atom.xml" | prepend: site.baseurl }}" class="my-link">ATOM</a><br>
+          <span class="my-item-sub"><i class="fa fa-rss" aria-hidden="true"></i> {{ site.rss_badge }}</span>
+      </li>
+    </ul>
+  </div>
+  <div id="projects-noscript">
+    <h2 class="my-mini-heading">{{ site.projects_btn }}</h2>
+    <ul>
+      {% for project in site.data.projects %}
+      <li>
+        <p class="my-item"><a href="{{ project.link }}" class="my-link">{{ project.name }}</a><br>
+          <span class="my-item-sub">
+        {{ project.description }}
+      </span>
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</noscript>
