@@ -19,5 +19,7 @@ projects_btn: "Platform"
 close_btn: "Close"
 home_btn: "Home"
 
+instagram_username: eastlake_united
+
 # Build settings
 markdown: kramdown
